@@ -1,0 +1,3 @@
+[submodule "zlib-library"]
+	path = zlib-library
+	url = https://github.com/jaskooner/zlib-library.git
