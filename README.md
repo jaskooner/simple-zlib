@@ -17,7 +17,6 @@ g++ main.cc lib.cpp \
   -I zlib-library/release/include \
   -L zlib-library/release/lib/ -lz \
   -o dist/deflate
- -out example
  ```
 
 ## TODO
