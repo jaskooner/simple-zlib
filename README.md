@@ -13,7 +13,7 @@ sh build.sh
 ```
 
 ```bash
-g++ main.cc lib.cpp \
+g++ main.cc lib.cc \
   -I zlib-library/release/include \
   -L zlib-library/release/lib/ -lz \
   -o dist/deflate
