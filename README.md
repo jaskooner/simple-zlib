@@ -1,9 +1,24 @@
 # simple-zlib
 
-## build and install --TEST
-git clone --recurse-submodules https://github.com/jaskooner/simple-zlib.git
+## pre-requisites
+1. TODO
 
+## build and install --TEST
+```bash
+git clone --recurse-submodules https://github.com/jaskooner/simple-zlib.git
+```
+
+```bash
 sh build.sh
+```
+
+```bash
+g++ main.cc lib.cpp \
+  -I zlib-library/release/include \
+  -L zlib-library/release/lib/ -lz \
+  -o dist/deflate
+ -out example
+ ```
 
 ## TODO
 1. write up inflate method
