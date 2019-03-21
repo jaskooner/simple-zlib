@@ -2,3 +2,4 @@ zlib-build/
 zlib-src/
 .vscode/
 dist/
+build/

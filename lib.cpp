@@ -1,6 +1,5 @@
 #include "lib.hpp"
 
-
 int def (FILE *source, FILE *dest, int level)
 {
   int ret, flush;
@@ -29,8 +28,8 @@ int def (FILE *source, FILE *dest, int level)
     flush = feof(source) ? Z_FINISH : Z_NO_FLUSH;
     strm.next_in = in;
 
-    /* run deflate() on input until output buffer not full, 
-    finish compression if all of source has been read in */
+    /* run deflate() on input until output buffer not full,
+finish compression if all of source has been read in */
 
     do
     {
@@ -59,7 +58,7 @@ int def (FILE *source, FILE *dest, int level)
   return Z_OK;
 }
 
-void zerr(int ret)
+void zerr (int ret)
 {
   fputs("zpipe: ", stderr);
   switch (ret)
